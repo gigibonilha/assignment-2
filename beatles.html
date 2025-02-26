@@ -1,64 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Informational page about the life and carrer of The Beatles">
-<meta name="author" content="Giovanna Boniha">
-<meta name="keywords" content="Beatles, Paul Mccartney, John Lennon, Ringo Starr, George Harrison, Let it Be">
-<title> All About The Beatles</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Informational page about the life and career of The Beatles">
+    <meta name="author" content="Giovanna Boniha">
+    <meta name="keywords" content="Beatles, Paul McCartney, John Lennon, Ringo Starr, George Harrison, Let it Be">
+    <title>All About The Beatles</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #74992e, pink); /* Gradient from green to pink */
+            font-family: Arial, sans-serif; /* Optional: Set a general font */
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+            height: 240vh; /* Full viewport height */
+        html {
+            scroll-behavior: smooth;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive columns */
+            gap: 150px; 
+            padding: 15px;
+        }
+        header {
+            width: 100%; /* Ensure header takes full width */
+            text-align: center; /* Center text horizontally */
+            padding: 20px 0;  /* Padding for space around content in header */
+            position: relative;
+        }
+        /* Styling for images */
+        .gallery img {
+            width: 150%; /* Make images responsive */
+            height: 100%; /* Maintain aspect ratio */
+            border-radius: 8px; /* Rounded corners for images */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for a subtle effect */
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+        }
+
+        /* Hover effect on images */
+        .gallery img:hover {
+            transform: scale(1.05); /* Slight zoom effect */
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+        }
+
+        /* Navigation Styles */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: pink;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: darkmagenta;
+        }
+        footer {
+            text-align: center; /* Center the text */
+            padding: 20px; /* Add padding for spacing around the content */
+            margin-top: auto; /* Push the footer to the bottom of the page */
+        }
+    </style>
 </head>
 <body>
     <header>
-    <h1> <b><u> Who are The Beatles?</u> </b></h1>
+        <h1><b><u>Who are The Beatles?</u></b></h1>
+        <nav>
+            <ul>
+                <li><a href="#formation">Formation of the Band</a></li>
+                <li><a href="#discography">Discography</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#streamed-songs">Most Streamed Songs</a></li>
+            </ul>
+        </nav>
     </header>
-<main>
+
+    <style>
+        /* Add padding to the sections for better spacing */
+        section {
+            padding: 20px; /* Adds padding around each section */
+        }
+    
+        /* Add padding to paragraphs for more space inside them */
+        p {
+            padding-bottom: 10px; /* Adds space below each paragraph */
+        }
+    </style>
+    
     <main>
-        <!-- Did you know that The Beatles were first called the Quarrymen? -->
-    <p> The Beatles are an English rock band founded in Liverpool in the year of 1960. 
-        The members are Paul Mccartney, John Lennon, Ringo Starr and George Harrison.  </p>
-    <h2> <em>Formation of the band</em> </h2>
-    <p>In March 1956, <span style="background-color: yellow;">John Lennon</span>, aged 16, and a few of his friends from school played in a skiffle band called the Quarrymen. 
-        After meeting <span style="background-color: yellow;">John</span> in the July of that year, <span style="background-color: yellow;">Paul McCartney</span> joined the band as a rhythm guitarist and invited his friend <span style="background-color: yellow;">George Harrison</span> to watch the band perform.
-        <span style="background-color: yellow;">George</span> then auditioned to be in the band, but <span style="background-color: yellow;">John</span> thought that he was too young, however, after several months of persistence, he performed lead guitar in a performance as was enlisted as their lead guitarist.
-      </p>
-    <p>On 11th February 1963, The Beatles recorded ten songs during a single studio session for their debut album, Please Please Me. After the positive reaction to their first single Love Me Do, the single Please Please Me was met with a bigger reaction, 
-        and reached number one on every UK chart except Record Retailer, where it reached number two.
-        Due to their commercial success, it increased their media exposure – 
-        the Beatles became known for their comical attitude as this was different to other pop artists at the time. Due to their attitude and behaviour, 
-        they become even more of an interest to their fans.</p>
-        <h4><b>Discography</b></h4>
-        <ul>
-            <li><a href="https://www.beatlesbible.com/albums/please-please-me/" target="_blank">Please Please Me (1963)</a></li>
-            <li><a href="https://www.beatlesbible.com/albums/with-the-beatles/" target="_blank">With The Beatles (1963)</a></li>
-            <li><a href="https://www.beatlesbible.com/albums/a-hard-days-night/" target="_blank">A Hard Day’s Night (1964)</a></li>
-            <li><a href="https://www.beatlesbible.com/albums/beatles-for-sale/" target="_blank">Beatles For Sale (1964)</a></li>
-            <li><a href="https://www.beatlesbible.com/albums/help/" target="_blank">Help! (1965)</a></li>
-            <li><a href="https://www.beatlesbible.com/albums/rubber-soul/" target="_blank">Rubber Soul (1965)</a></li>
-            <li><a href="https://www.beatlesbible.com/albums/revolver/" target="_blank">Revolver (1966)</a></li>
-            <li><a href="https://www.beatlesbible.com/albums/sgt-peppers-lonely-hearts-club-band/" target="_blank">Sgt Pepper’s Lonely Hearts Club Band (1967)</a></li>
-            <li><a href="https://www.beatlesbible.com/albums/the-beatles/" target="_blank">The Beatles (White Album) (1968)</a></li>
-            <li><a href="https://www.beatlesbible.com/albums/yellow-submarine/" target="_blank">Yellow Submarine (1969)</a></li>
-            <li><a href="https://www.beatlesbible.com/albums/abbey-road/" target="_blank">Abbey Road (1969)</a></li>
-            <li><a href="https://www.beatlesbible.com/albums/let-it-be/" target="_blank">Let It Be (1970)</a></li>
-        </ul>
-        <h5><b>GALLERY</b></h5>
-    <img src="Beatles1.jpg" alt="The Beatles Image 1" width="300"/>
-    <img src="Beatles2.jpg" alt="The Beatles Image 2" width="300"/>
-    <img src="Beatles3.jpg" alt="The Beatles Image 3" width="300"/>
-    <h5><b>Most Streamed Songs by The Beatles</b></h5>
-    <ol>
-        <li>Here Comes the Sun</li>
-        <li>Come Together</li>
-        <li>Let It Be</li>
-        <li>Yesterday</li>
-        <li>Hey Jude</li>
-      </ol>
-</main>
-</main>
-<footer>
-<p> Giovanna Bonilha is a student at the University of Miami majoring in Creative Advertising. 
-    She is from Brazil and currently resides in Miami, Florida. She is an avid fan and listener of The Beatles and a student in the University's Web Lab class.  </p>
-</footer>
+        <section id="formation">
+            <h2><em>Formation of the band</em></h2>
+            <p>In March 1956, <span style="background-color: yellow;">John Lennon</span>, aged 16, and a few of his friends from school played in a skiffle band called the Quarrymen...</p>
+            <p>After meeting <span style="background-color: yellow;">John</span> in the July of that year, <span style="background-color: yellow;">Paul McCartney</span> joined the band as a rhythm guitarist and invited his friend <span style="background-color: yellow;">George Harrison</span> to watch the band perform. <span style="background-color: yellow;">George</span> then auditioned to be in the band, but <span style="background-color: yellow;">John</span> thought that he was too young. However, after several months of persistence, he performed lead guitar in a performance and was enlisted as their lead guitarist.</p>
+            <p>On 11th February 1963, The Beatles recorded ten songs during a single studio session for their debut album, <em>Please Please Me</em>. After the positive reaction to their first single <em>Love Me Do</em>, the single <em>Please Please Me</em> was met with an even bigger reaction, and it reached number one on every UK chart except Record Retailer, where it reached number two. Due to their commercial success, it increased their media exposure – The Beatles became known for their comical attitude, which was different from other pop artists at the time. Because of their attitude and behaviour, they became even more of an interest to their fans.</p>
+        </section>
+    </main>
+
+        <section id="discography">
+            <h4><b>Discography</b></h4>
+            <ul>
+                <li><a href="https://www.beatlesbible.com/albums/please-please-me/" target="_blank">Please Please Me (1963)</a></li>
+                <li><a href="https://www.beatlesbible.com/albums/with-the-beatles/" target="_blank">With The Beatles (1963)</a></li>
+                <li><a href="https://www.beatlesbible.com/albums/a-hard-days-night/" target="_blank">A Hard Day’s Night (1964)</a></li>
+                <li><a href="https://www.beatlesbible.com/albums/beatles-for-sale/" target="_blank">Beatles For Sale (1964)</a></li>
+                <li><a href="https://www.beatlesbible.com/albums/help/" target="_blank">Help! (1965)</a></li>
+                <li><a href="https://www.beatlesbible.com/albums/rubber-soul/" target="_blank">Rubber Soul (1965)</a></li>
+                <li><a href="https://www.beatlesbible.com/albums/revolver/" target="_blank">Revolver (1966)</a></li>
+                <li><a href="https://www.beatlesbible.com/albums/sgt-peppers-lonely-hearts-club-band/" target="_blank">Sgt Pepper’s Lonely Hearts Club Band (1967)</a></li>
+                <li><a href="https://www.beatlesbible.com/albums/the-beatles/" target="_blank">The Beatles (White Album) (1968)</a></li>
+                <li><a href="https://www.beatlesbible.com/albums/yellow-submarine/" target="_blank">Yellow Submarine (1969)</a></li>
+                <li><a href="https://www.beatlesbible.com/albums/abbey-road/" target="_blank">Abbey Road (1969)</a></li>
+                <li><a href="https://www.beatlesbible.com/albums/let-it-be/" target="_blank">Let It Be (1970)</a></li>
+            </ul>
+        </section>
+
+        <section id="gallery">
+            <h5><b>Gallery</b></h5>
+            <div class="gallery">
+                <img src="Beatles1.jpg" alt="The Beatles Image 1" />
+                <img src="Beatles2.jpg" alt="The Beatles Image 2" />
+                <img src="Beatles3.jpg" alt="The Beatles Image 3" />
+            </div>
+        </section>
+
+        <section id="streamed-songs">
+            <h5><b>Most Streamed Songs by The Beatles</b></h5>
+            <ol>
+                <li>Here Comes the Sun</li>
+                <li>Come Together</li>
+                <li>Let It Be</li>
+                <li>Yesterday</li>
+                <li>Hey Jude</li>
+            </ol>
+        </section>
+    </main>
+
+    <footer>
+        <p>Giovanna Bonilha is a student at the University of Miami majoring in Creative Advertising.
+            She is from Brazil and currently resides in Miami, Florida. She is an avid fan and listener of The Beatles and a student in the University's Web Lab class.</p>
+    </footer>
 </body>
 </html>
