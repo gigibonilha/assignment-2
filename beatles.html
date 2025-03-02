@@ -7,73 +7,11 @@
     <meta name="author" content="Giovanna Boniha">
     <meta name="keywords" content="Beatles, Paul McCartney, John Lennon, Ringo Starr, George Harrison, Let it Be">
     <title>All About The Beatles</title>
-    <style>
-        body {
-            background: linear-gradient(to bottom, #74992e, pink); /* Gradient from green to pink */
-            font-family: Arial, sans-serif; /* Optional: Set a general font */
-            margin: 0; /* Remove default margin */
-            padding: 0; /* Remove default padding */
-            height: 240vh; /* Full viewport height */
-        html {
-            scroll-behavior: smooth;
-        }
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive columns */
-            gap: 150px; 
-            padding: 15px;
-        }
-        header {
-            width: 100%; /* Ensure header takes full width */
-            text-align: center; /* Center text horizontally */
-            padding: 20px 0;  /* Padding for space around content in header */
-            position: relative;
-        }
-        /* Styling for images */
-        .gallery img {
-            width: 150%; /* Make images responsive */
-            height: 100%; /* Maintain aspect ratio */
-            border-radius: 8px; /* Rounded corners for images */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for a subtle effect */
-            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
-        }
-
-        /* Hover effect on images */
-        .gallery img:hover {
-            transform: scale(1.05); /* Slight zoom effect */
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
-        }
-
-        /* Navigation Styles */
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: pink;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            color: darkmagenta;
-        }
-        footer {
-            text-align: center; /* Center the text */
-            padding: 20px; /* Add padding for spacing around the content */
-            margin-top: auto; /* Push the footer to the bottom of the page */
-        }
-    </style>
+    <link rel="stylesheet" href="beatles.css"> 
 </head>
 <body>
     <header>
-        <h1><b><u>Who are The Beatles?</u></b></h1>
+        <h1 class="highlight"><u>Who are The Beatles?</u></h1>
         <nav>
             <ul>
                 <li><a href="#formation">Formation of the Band</a></li>
@@ -84,26 +22,13 @@
         </nav>
     </header>
 
-    <style>
-        /* Add padding to the sections for better spacing */
-        section {
-            padding: 20px; /* Adds padding around each section */
-        }
-    
-        /* Add padding to paragraphs for more space inside them */
-        p {
-            padding-bottom: 10px; /* Adds space below each paragraph */
-        }
-    </style>
-    
     <main>
         <section id="formation">
             <h2><em>Formation of the band</em></h2>
-            <p>In March 1956, <span style="background-color: yellow;">John Lennon</span>, aged 16, and a few of his friends from school played in a skiffle band called the Quarrymen...</p>
-            <p>After meeting <span style="background-color: yellow;">John</span> in the July of that year, <span style="background-color: yellow;">Paul McCartney</span> joined the band as a rhythm guitarist and invited his friend <span style="background-color: yellow;">George Harrison</span> to watch the band perform. <span style="background-color: yellow;">George</span> then auditioned to be in the band, but <span style="background-color: yellow;">John</span> thought that he was too young. However, after several months of persistence, he performed lead guitar in a performance and was enlisted as their lead guitarist.</p>
-            <p>On 11th February 1963, The Beatles recorded ten songs during a single studio session for their debut album, <em>Please Please Me</em>. After the positive reaction to their first single <em>Love Me Do</em>, the single <em>Please Please Me</em> was met with an even bigger reaction, and it reached number one on every UK chart except Record Retailer, where it reached number two. Due to their commercial success, it increased their media exposure – The Beatles became known for their comical attitude, which was different from other pop artists at the time. Because of their attitude and behaviour, they became even more of an interest to their fans.</p>
+            <p>In March 1956, John Lennon, aged 16, and a few of his friends from school played in a skiffle band called the Quarrymen...</p>
+            <p>After meeting John in the July of that year, Paul McCartney joined the band as a rhythm guitarist and invited his friend George Harrison to watch the band perform. George then auditioned to be in the band, but John thought that he was too young. However, after several months of persistence, he performed lead guitar in a performance and was enlisted as their lead guitarist.</p>
+            <p >On 11th February 1963, The Beatles recorded ten songs during a single studio session for their debut album, <em>Please Please Me</em>. After the positive reaction to their first single <em>Love Me Do</em>, the single <em>Please Please Me</em> was met with an even bigger reaction, and it reached number one on every UK chart except Record Retailer, where it reached number two.</p>
         </section>
-    </main>
 
         <section id="discography">
             <h4><b>Discography</b></h4>
@@ -126,9 +51,9 @@
         <section id="gallery">
             <h5><b>Gallery</b></h5>
             <div class="gallery">
-                <img src="Beatles1.jpg" alt="The Beatles Image 1" />
-                <img src="Beatles2.jpg" alt="The Beatles Image 2" />
-                <img src="Beatles3.jpg" alt="The Beatles Image 3" />
+                <img class="gallery-img" src="Beatles1.jpg" alt="The Beatles Image 1" />
+                <img class="gallery-img" src="Beatles2.jpg" alt="The Beatles Image 2" />
+                <img class="gallery-img" src="Beatles3.jpg" alt="The Beatles Image 3" />
             </div>
         </section>
 

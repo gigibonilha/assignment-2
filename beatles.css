@@ -1,0 +1,112 @@
+<style>
+body {
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    padding: 0; 
+    height: 240vh; 
+}   
+html {
+    scroll-behavior: smooth;
+    background: linear-gradient(to bottom, #74992e, pink); 
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+    gap: 150px; 
+    padding: 15px;
+}
+
+header {
+    width: 100%; 
+    text-align: center; 
+    padding: 20px 0; 
+    position: relative;
+    font-family:cursive 
+
+}
+
+h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 2.5em;
+    color: #1a1a1a;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.highlight {
+    font-weight: bold;
+    color: #481212;
+    background-color: #568837;
+    padding: 5px;
+    border-radius: 5px;
+    display:inline-block
+}
+
+p {
+    font-family: 'Georgia', serif;
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 10px;
+}
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+    cursor: pointer; 
+}
+
+nav ul li a:hover {
+    color: #d40d0d;
+}
+
+
+.gallery img {
+    width: 150%; 
+    height: 100%; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.gallery img:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); 
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: pink;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: darkmagenta;
+}
+footer {
+    text-align: center; 
+    padding: 20px; 
+    margin-top: auto; 
+}
+
+   section {
+    padding: 20px; 
+}
+
+
+p {
+    padding-bottom: 10px; 
+}
+</style>
